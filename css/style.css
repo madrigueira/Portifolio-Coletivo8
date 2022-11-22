@@ -364,3 +364,47 @@ header .container #ico-1{
     text-transform: uppercase;
     color: #D3E7E9;
 }
+
+/* BLOCO 4 */
+.bloco-4{
+    background-color: #0A1325;
+}
+
+.bloco-4 .container{
+    display: flex;
+    max-width: 1250px;
+    margin: auto;
+    padding: 30px;
+}
+
+.bloco-4 .container .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.bloco-4 .container .grid div h5{
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #D3E7E9;
+    border-bottom: solid 0px #FF0646;
+    width: fit-content;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.bloco-4 .container .grid div h5:hover, .bloco-4 .container .grid div h5.active{
+    color: #FEB202;
+    border-bottom: solid 5px #FF0646;
+}
+
+.bloco-4 .container .grid div p{
+    height: 0px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.bloco-4 .container .grid div p.active{
+    height: auto;
+}
