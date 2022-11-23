@@ -374,13 +374,14 @@ header .container #ico-1{
     display: flex;
     max-width: 1250px;
     margin: auto;
-    padding: 30px;
+    padding: 75px 30px;
 }
 
 .bloco-4 .container .grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 10px;
+    height: 180px;
 }
 
 .bloco-4 .container .grid div h5{
@@ -394,17 +395,24 @@ header .container #ico-1{
     cursor: pointer;
 }
 
-.bloco-4 .container .grid div h5:hover, .bloco-4 .container .grid div h5.active{
+.bloco-4 .container .grid div h5:hover{
+    color: #FEB202;
+}
+
+.bloco-4 .container .grid div h5.active{
     color: #FEB202;
     border-bottom: solid 5px #FF0646;
 }
 
 .bloco-4 .container .grid div p{
-    height: 0px;
+    color: #D3E7E9;
+    font-size: 15px;
+    padding-top: 15px;
     overflow: hidden;
-    transition: 0.2s;
+    transition: 0.3s;
+    opacity: 0;
 }
 
 .bloco-4 .container .grid div p.active{
-    height: auto;
+    opacity: 1;
 }
